@@ -1,0 +1,40 @@
+/*Media Queries*/
+@media all and (max-width: 750px) {
+  .resp__row-col-wrap {
+    -webkit-flex-flow: column nowrap;
+    -moz-flex-flow: column nowrap;
+    -o-flex-flow: column nowrap;
+    flex-flow: column nowrap;    
+  }
+	.slideshow-container {
+		height: 800px;
+	}
+	#main div > h1 {
+		padding: 0;
+	}
+  /*Change the phone Trambots vid size*/
+  .feature-device {
+	height: 60.066vw;
+	width: 29vw;
+  }
+  
+}
+@media all and (min-width: 1200px) {
+	.content-pages-text {
+		font-size: 2.5vw;
+	}
+}
+@media all and (min-width: 600px) and (max-width: 1200px) {
+	.content-pages-text {
+		font-size: 3vw;
+	}
+}
+@media all and (max-width: 600px) {
+	.content-pages-text {
+		font-size: 4.4vw;
+	}
+	#main {
+		min-width: auto;
+		padding: 0;
+	}
+}

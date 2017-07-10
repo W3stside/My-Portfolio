@@ -1,0 +1,652 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+@import url("https://fonts.googleapis.com/css?family=Space+Mono");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+/* RESET.CSS - Cause it's lovely
+* https://meyerweb.com/eric/tools/css/reset/ 
+* v2.0 | 20110126
+* License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html, body {
+	min-height: 100%;
+	height: 100%;
+}
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  background-color: beige;
+  font: 1em Josefin Sans;
+}
+
+p {
+  font-family: Josefin Sans;
+}
+
+ul > li {
+	margin-left: 2rem;
+}
+
+ul > li::before {
+	content: '+ ';
+}
+
+em {
+	text-decoration: underline;
+}
+
+h1 {
+  font: 4.2vw/55px Permanent Marker, cursive;
+  margin-bottom: 15px;
+}
+
+code::before {
+  content: '>';
+}
+
+code {
+  background-color: #e4e4e4;
+  display: block;
+  font: italic bold 1.4vw/1.25 "Space Mono", monospace;
+  margin: 5px;
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+i {
+	font-style: italic;
+}
+
+/* ========================== TEXT SIZING ========================== */
+/* ========================== TEXT SIZING ========================== */
+/* ========================== TEXT SIZING ========================== */
+/* ========================== TEXT SIZING ========================== */
+
+.huge-h1 {font-size: 48px !important;}
+.font16 {font-size: 16px !important;}
+.font18 {font-size: 18px !important;}
+.font20 {font-size: 20px !important;}
+.font22 {font-size: 22px !important;}
+.font24 {font-size: 24px !important;}
+.font26 {font-size: 26px !important;}
+.font28 {font-size: 28px !important;}
+.font30 {font-size: 30px !important;}
+.font32 {font-size: 32px !important;}
+
+/*Bolding and such*/
+.font100 {font-weight: 100 !important;}
+.font200 {font-weight: 200 !important;}
+.font300 {font-weight: 300 !important;}
+.font400 {font-weight: 400 !important;}
+.font500 {font-weight: 500 !important;}
+.font600 {font-weight: 600 !important;}
+.font700 {font-weight: 700 !important;}
+.font800 {font-weight: 800 !important;}
+
+/*colors*/
+.black {color: #000 !important;}
+
+
+/* ======================== SCROLLBARS ==============================*/
+/* ======================== SCROLLBARS ==============================*/
+/* ======================== SCROLLBARS ==============================*/
+/
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+
+
+/*=================== PADDING + MARGIN ===============================*/
+/* =================== PADDING + MARGIN ===============================*/
+/* =================== PADDING + MARGIN ===============================*/
+
+.padding0 {padding: 0px !important;}
+
+.paddingHalf15 {padding: 7.5px !important;}
+
+.padding15 {padding: 15px !important;}
+.padding15TB {padding: 15px 0 !important;}
+.padding15LR {padding: 0 15px !important;}
+.hr__padding15 {padding-top: 15px !important;}
+
+.padding30 {padding: 30px !important;}
+
+/*margin*/
+.margin0 {margin: 0 !important;}
+.margin5 {margin: 5px !important;}
+.margin15 {margin: 15px !important;}
+.margin15TB {margin: 15px 0 !important;}
+.margin25LR {margin: 0 25px !important;}
+.marginTop15 {margin-top: 15px !important;}
+.marginRightAuto {margin-right: auto !important;}
+.marginLeftAuto {margin-left: auto !important;}
+.marginAuto {margin: auto !important;}
+
+
+
+.responsive-img {
+  margin: auto;
+  max-width: 100%;
+}
+
+.icon-container {
+  margin: 0 5px;
+  width: 50px;
+}
+.social-icons {
+	transition: all 0.6s linear;
+}
+.social-icons:hover {
+	transform: rotate3d(1,1,0,180deg);
+}
+.text-center {
+  text-align: center;
+}
+
+/*////////////////////////////////
+* Top Menu
+*/
+.menu-item:hover a {
+  color: salmon;
+}
+
+.menu-item:hover {
+  background-color: black;
+}
+
+header, section, .container {
+  margin: 0% 0;
+}
+
+.flex-container {
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -o-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: none !important;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu-item {
+  background-color: transparent;
+  flex: 1;
+  margin: 0;
+  padding: 5px;
+  transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+}
+
+.flex-container, #main {
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.flex-container, .container, #sidebar, #sidebar > div, #main, #main > div, .content-pages, #slideshow > div, .icon-container, .icon-parent-container-div {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.container {
+  height: 100%;
+}
+.resp__row-col-wrap {
+	-webkit-flex-flow: row nowrap;
+  -moz-flex-flow: row nowrap;
+  -o-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+.icon-parent-container-div {
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -o-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+#sidebar {
+  margin-right: auto;
+}
+
+#sidebar, #main {
+  -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  -o-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+#sidebar, #sidebar > div, #main > div {
+  justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.about-div-content, .contact-div-content {
+	-webkit-flex-flow: column nowrap;
+	-moz-flex-flow: column nowrap;
+	-o-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+}
+
+.transitions {
+	-webkit-transition: all 0.7s linear;
+	-moz-transition: all 0.7s linear;
+	-o-transition: all 0.7s linear;
+	transition: all 0.7s linear;
+}
+
+#slideshow > div, .icon-container {
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  -webkit-transition: all 0.7s linear;
+  -moz-transition: all 0.7s linear;
+  -o-transition: all 0.7s linear;
+  transition: all 0.7s linear;
+}
+
+.content-pages {
+  -webkit-flex: 0 0 0;
+  -moz-flex: 0 0 0;
+  -o-flex: 0 0 0;
+  flex: 0 0 0;
+  opacity: 1;
+  overflow-x: hidden;
+}
+
+.content-pages-text {
+  font-size: 2em;
+  margin: 20px;
+}
+
+#siderbar > div, #main {
+  -webkit-align-content: center;
+  -moz-align-content: center;
+  -o-align-content: center;
+  align-content: center;
+}
+
+#sidebar div {
+  color: black;
+  margin: auto;
+  padding: 15px 0;
+}
+
+#main {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+  min-width: 320px;
+  min-height: 85px;
+}
+
+.container::nth-child(2) {
+  background-color: black;
+}
+
+#main div h1:hover {
+  cursor: pointer;
+}
+
+#main div {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+  overflow: hidden;
+  
+  text-align: center;
+}
+
+#main div > h1 {font-size: 3.7em; padding: 60px; transition: all 0.3s linear;}
+
+#about-h1 {margin-bottom: auto;}
+#contact-h1 {margin-top: auto;}
+#work-h1 {margin: auto;}
+
+/*///////////////////////
+* JS Classes
+//////////////////////*/
+.good {
+  -webkit-flex: 100 !important;
+  -moz-flex: 100 !important;
+  -o-flex: 100 !important;
+  flex: 100 !important;
+}
+.open {
+	-webkit-flex: 4;
+	-moz-flex: 4;
+	-o-flex: 4;
+	flex: 4;
+}
+
+.closed {
+	/*display: none !important;*/
+	/*height: 0;*/
+}
+
+.hide {
+  opacity: 0 !important;
+}
+
+.small-font {
+	font-size: 0.01px !important;
+	max-height: 0;
+}
+.disabled {
+	display: none !important;
+}
+/*/////////////////
+// End JS Classes
+////////////////*/
+
+/*/////////////////////////////////
+** Slideshow CSS 
+////////////////////////////////*/
+.slideshow-container {
+  align-items: center;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.slides {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  
+  overflow: hidden;
+  transition: all 0.8s ease-in-out;
+}
+
+.transition-opacity {
+  opacity: 1 !important;
+}
+
+.slides img {
+  left: 0;
+  opacity: 0.4;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.slides img, .slideshow-controls {
+  position: absolute;
+  top: 0;
+}
+/*
+.slides .text {
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80%;
+}*/
+.slides .text {
+  display: flex;
+  flex-flow: column wrap; justify-content: center; align-items: center;
+  
+  position: absolute; top: auto;
+  
+  width: 80%;
+  
+  text-align: center;
+  
+}
+.slideshow-controls {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideshow-controls > span {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 2.6em;
+  margin: 0 5px;
+  padding: 0 10px;
+}
+
+#control-left {
+  left: 0;
+}
+
+#control-right {
+  right: 0;
+}
+
+#control-left:hover, #control-right:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* === Trambots Phone Video === */
+/* ============================ */
+/* ============================ */
+.feature-device {
+	position: relative;
+	
+	/*margin: -20px 20px 20px 20px;*/
+	margin: auto;
+	/*height: 518.14px; width: 250px;*/
+	height: 36.1vw; width: 17.43vw;
+}
+.phone-wrapper {
+	position: absolute;
+	left: 0;
+	
+	min-height: initial !important;
+	opacity: 1 !important;
+	
+	z-index: 1;	
+}
+#tramVidDiv {
+	position: absolute;
+	left: 5.6%;
+	top: 12.14%;
+	
+	border-radius: 4px;
+	height: 75.76%; width: 89%;
+	overflow: hidden;
+	
+	z-index: 2;
+}
+
+.gifContainer {
+	display: block;
+    margin: auto;
+	
+	width: 75%; height: 100%;
+}
+
+/*Flex-Box*/
+
+/*EXPIREMENTAL*/
+.flex { display: flex; }
+
+.col-wrap { flex-flow: column wrap; }
+.col-nowrap { flex-flow: column nowrap; }
+.row-wrap { flex-flow: row wrap; }
+.row-nowrap { flex-flow: row nowrap; }
+.a-start { align-items: flex-start; }
+.a-center { align-items: center; }
+.a-end { align-items: flex-end; }
+.a-stretch {align-items: stretch;}
+.j-start { justify-content: flex-start; }
+.j-center { justify-content: center; }
+.j-end { justify-content: flex-end; }
+.j-around { justify-content: space-around; }
+.j-between { justify-content: space-between; }
+
+/*Flex Items*/
+.flex-1 { flex: 1; }
+.flex-2 { flex: 2; }
+.flex-3 { flex: 3; }
+.flex-4 { flex: 4; }
+.flex-5 { flex: 5; }
+
+@media all and (max-width: 576px) {
+  .col-xs-p1 { flex: 1 8.33333%; }
+  .col-xs-p2 { flex: 1 16.66667%; }
+  .col-xs-p3 { flex: 1 25%; }
+  .col-xs-p4 { flex: 1 33.33333%; }
+  .col-xs-p5 { flex: 1 41.66667%; }
+  .col-xs-p6 { flex: 1 50%; }
+  .col-xs-p7 { flex: 1 58.33333%; }
+  .col-xs-p8 { flex: 1 66.66667%; }
+  .col-xs-p9 { flex: 1 75%; }
+  .col-xs-p10 { flex: 1 83.3333%; }
+  .col-xs-p11 { flex: 1 91.66667%; }
+  .col-xs-p12 { flex: 1 100%; }
+}
+
+@media all and (min-width: 576px) {
+  .col-sm-p1 { flex: 1 8.33333%; }
+  .col-sm-p2 { flex: 1 16.66667%; }
+  .col-sm-p3 { flex: 1 25%; }
+  .col-sm-p4 { flex: 1 33.33333%; }
+  .col-sm-p5 { flex: 1 41.66667%; }
+  .col-sm-p6 { flex: 1 50%; }
+  .col-sm-p7 { flex: 1 58.33333%; }
+  .col-sm-p8 { flex: 1 66.66667%; }
+  .col-sm-p9 { flex: 1 75%; }
+  .col-sm-p10 { flex: 1 83.3333%; }
+  .col-sm-p11 { flex: 1 91.66667%; }
+  .col-sm-p12 { flex: 1 100%; }
+}
+
+@media all and (min-width: 768px) {
+  .col-md-p1 { flex: 1 8.33333%; }
+  .col-md-p2 { flex: 1 16.66667%; }
+  .col-md-p3 { flex: 1 25%; }
+  .col-md-p4 { flex: 1 33.33333%; }
+  .col-md-p5 { flex: 1 41.66667%; }
+  .col-md-p6 { flex: 1 50%; }
+  .col-md-p7 { flex: 1 58.33333%; }
+  .col-md-p8 { flex: 1 66.66667%; }
+  .col-md-p9 { flex: 1 75%; }
+  .col-md-p10 { flex: 1 83.3333%; }
+  .col-md-p11 { flex: 1 91.66667%; }
+  .col-md-p12 { flex: 1 100%; }
+}
+
+@media all and (min-width: 992px) {
+  .col-lg-p1 { flex: 1 8.33333%; }
+  .col-lg-p2 { flex: 1 16.66667%; }
+  .col-lg-p3 { flex: 1 25%; }
+  .col-lg-p4 { flex: 1 33.33333%; }
+  .col-lg-p5 { flex: 1 41.66667%; }
+  .col-lg-p6 { flex: 1 50%; }
+  .col-lg-p7 { flex: 1 58.33333%; }
+  .col-lg-p8 { flex: 1 66.66667%; }
+  .col-lg-p9 { flex: 1 75%; }
+  .col-lg-p10 { flex: 1 83.3333%; }
+  .col-lg-p11 { flex: 1 91.66667%; }
+  .col-lg-p12 { flex: 1 100%; }
+}
+
+@media all and (min-width: 1200px) {
+  .col-xl-p1 { flex: 1 8.33333%; }
+  .col-xl-p2 { flex: 1 16.66667%; }
+  .col-xl-p3 { flex: 1 25%; }
+  .col-xl-p4 { flex: 1 33.33333%; }
+  .col-xl-p5 { flex: 1 41.66667%; }
+  .col-xl-p6 { flex: 1 50%; }
+  .col-xl-p7 { flex: 1 58.33333%; }
+  .col-xl-p8 { flex: 1 66.66667%; }
+  .col-xl-p9 { flex: 1 75%; }
+  .col-xl-p10 { flex: 1 83.3333%; }
+  .col-xl-p11 { flex: 1 91.66667%; }
+  .col-xl-p12 { flex: 1 100%; }
+}
+
+/*Width + Height*/
+.fullWidthHeight {width: 100%; height: 100%;}
+.width50 {width: 50%;}
+.width75 {width: 75%;}
+.width100 {width: 100%;}
