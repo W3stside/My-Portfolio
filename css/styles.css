@@ -73,11 +73,11 @@ ul > li {
 }
 
 ul > li::before {
-	content: '+ ';
+	content: '';
 }
 
 em {
-	text-decoration: underline;
+	color: peachpuff;
 }
 
 h1 {
@@ -87,6 +87,15 @@ h1 {
 
 code::before {
   content: '>';
+}
+
+.code__black {
+	background-color: #171515;
+}
+
+ul.code__black > span, li {
+    color: #7cb6ff;
+    font: 100 30px Courier;
 }
 
 code {
@@ -140,6 +149,7 @@ i {
 
 /*colors*/
 .black {color: #000 !important;}
+.light-grey {color: rgba(240,240,240,1);}
 
 
 /* ======================== SCROLLBARS ==============================*/
@@ -164,6 +174,13 @@ i {
 }
 
 
+/*=========================== EFFECTS ================================*/
+/*=========================== EFFECTS ================================*/
+/*=========================== EFFECTS ================================*/
+.rotate90 {
+	font-size: 30px !important;
+	transform: rotate3d(0,0,1,-90deg);
+}
 
 /*=================== PADDING + MARGIN ===============================*/
 /* =================== PADDING + MARGIN ===============================*/
